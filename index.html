@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Belshiba J - Personal Portfolio">
+  <title>Belshiba J | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#home">B<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☼</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="welcome"><span class="dot"></span> WELCOME TO MY PORTFOLIO</p>
+        <p class="eyebrow">HELLO, I'M</p>
+
+        <h1 id="myName" aria-label="Belshiba J">Belshiba J<span>.</span></h1>
+
+        <h2>I'm a <span id="typingText">Student</span><span class="cursor">|</span></h2>
+
+        <p class="description">
+          A passionate Computer Science student exploring web development,
+          creative design and new technologies. Learning something new every day!
+        </p>
+
+        <div class="buttons">
+          <a href="#projects" class="btn primary">Explore My Work ↘</a>
+          <a href="#contact" class="btn secondary">Contact Me ↗</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/belshiba-1710" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="mailto:belshijebakumar1710@gmail.com">Email ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="photo-card">
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <span>BJ</span>
+            <p>YOUR PHOTO</p>
+            <small>Make this space yours</small>
+          </div>
+
+          <img id="profilePhoto" alt="Belshiba J portrait" hidden>
+
+          <label for="photoUpload" class="upload-btn">📷 Upload My Photo</label>
+          <input type="file" id="photoUpload" accept="image/*" hidden>
+        </div>
+
+        <div class="floating-card top-card">✦ Always Curious</div>
+        <div class="floating-card bottom-card">&lt;/&gt; HTML · CSS · JS</div>
+      </div>
+
+      <a href="#about" class="scroll-down">↓ SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <p class="section-label">01 / ABOUT ME</p>
+        <h2>Learning Today.<br><span>Creating Tomorrow.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card reveal">
+          <p class="lead">
+            I'm <strong>Belshiba J</strong>, a second-year B.Sc Computer Science
+            student at KG College of Arts and Science.
+          </p>
+          <p>
+            I'm interested in technology, web development and creative design.
+            I'm building my skills in HTML, CSS and JavaScript and love exploring
+            new ideas through hands-on projects.
+          </p>
+          <a href="#contact" class="text-link">Let's connect ↗</a>
+        </div>
+
+        <div class="stats-grid reveal">
+          <div class="glass-card stat"><strong>03</strong><span>WEB SKILLS</span></div>
+          <div class="glass-card stat"><strong>02<span>nd</span></strong><span>YEAR STUDENT</span></div>
+          <div class="glass-card stat wide">
+            <strong>✦</strong>
+            <div><h3>Always Learning</h3><p>Front-end development & design</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal">
+        <p class="section-label">02 / MY TOOLKIT</p>
+        <h2>Skills I'm <span>Building.</span></h2>
+        <p class="section-description">Learning, practising and improving every day.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon html-icon">5</div>
+          <span class="skill-number">01</span>
+          <h3>HTML</h3>
+          <p>Building structured web pages.</p>
+          <div class="progress"><span style="--level:75%"></span></div>
+          <small>LEARNING PROGRESS</small>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon css-icon">✳</div>
+          <span class="skill-number">02</span>
+          <h3>CSS</h3>
+          <p>Creating beautiful responsive designs.</p>
+          <div class="progress"><span style="--level:70%"></span></div>
+          <small>LEARNING PROGRESS</small>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon js-icon">JS</div>
+          <span class="skill-number">03</span>
+          <h3>JavaScript</h3>
+          <p>Adding interactions and animations.</p>
+          <div class="progress"><span style="--level:50%"></span></div>
+          <small>LEARNING PROGRESS</small>
+        </article>
+      </div>
+      <p class="skills-note">✦ Progress bars are illustrative; update them as your skills grow.</p>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-heading reveal">
+        <p class="section-label">03 / EDUCATION</p>
+        <h2>My Academic <span>Journey.</span></h2>
+      </div>
+      <article class="education-card glass-card reveal">
+        <div class="education-icon">✧</div>
+        <div>
+          <p class="section-label">CURRENTLY STUDYING</p>
+          <h3>B.Sc Computer Science</h3>
+          <h4>KG College of Arts and Science</h4>
+          <p>Second-year student learning computer science and practical web development.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading reveal">
+        <p class="section-label">04 / MY PROJECTS</p>
+        <h2>Ideas Into <span>Reality.</span></h2>
+        <p class="section-description">A growing collection of things I'm learning to build.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-art"> &lt; <span>✦</span> /&gt; </div>
+          <p class="section-label">01 / WEB DEVELOPMENT</p>
+          <h3>Personal Portfolio</h3>
+          <p>A personal website made with HTML, CSS and JavaScript, featuring animations and interactive elements.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a class="text-link" href="https://github.com/belshiba-1710" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art second-art">✧</div>
+          <p class="section-label">02 / FUTURE PROJECT</p>
+          <h3>Something New</h3>
+          <p>A space for my next project. I'll add more details here as I learn and build new things.</p>
+          <div class="tags"><span>Creative</span><span>Learning</span></div>
+          <a class="text-link" href="#contact">Stay connected ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="section-heading reveal">
+        <p class="section-label">05 / ACHIEVEMENTS</p>
+        <h2>Every Step <span>Counts.</span></h2>
+      </div>
+      <article class="education-card glass-card reveal">
+        <div class="education-icon">✦</div>
+        <div>
+          <p class="section-label">LEARNING JOURNEY</p>
+          <h3>NPTEL</h3>
+          <p>Add your completed NPTEL course name and certificate details here.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-box reveal">
+        <p class="section-label">06 / GET IN TOUCH</p>
+        <h2>Have an Idea?<br><span>Let's Talk.</span></h2>
+        <p>I'm happy to connect, learn from others and explore new opportunities.</p>
+
+        <div class="buttons">
+          <a class="btn primary" href="mailto:belshijebakumar1710@gmail.com?subject=Hello%20Belshiba">Send Me an Email ↗</a>
+          <a class="btn secondary" href="https://github.com/belshiba-1710" target="_blank" rel="noopener noreferrer">My GitHub ↗</a>
+        </div>
+
+        <div class="email-row">
+          <span>EMAIL</span>
+          <a href="mailto:belshijebakumar1710@gmail.com">belshijebakumar1710@gmail.com</a>
+          <button id="copyEmail" type="button">Copy</button>
+        </div>
+        <p id="copyMessage" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home">B<span>.</span></a>
+    <p>Designed & built with curiosity ♡</p>
+    <p>© <span id="year"></span> Belshiba J</p>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
